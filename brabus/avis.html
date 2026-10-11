@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Avis clients - Brabus</title>
+    <link rel="stylesheet" href="css/style.css">
+<script src="js/config.js"></script></head>
+<body>
+<a class="skip" href="#main">Aller au contenu</a><header class="navbar"><a href="index.html" class="logo">BRABUS<span>× VINCENT ANAVILLELA</span></a><button class="menu-toggle" aria-expanded="false" aria-controls="navigation">Menu +</button><nav id="navigation" aria-label="Navigation principale"><a href="index.html#vehicules">Collection</a><a href="index.html#boutiques">Showrooms</a><a href="avis.html">Avis</a><a href="index.html#contact">Contact ↗</a><a id="inscription" href="inscription.html">Créer un compte</a><a id="connexion" class="account-link" href="connexion.html">Mon espace</a><a id="lienAdmin" href="admin/dashboard.html" style="display:none">Administration</a><a id="logout" href="#" style="display:none">Déconnexion</a></nav></header>
+
+<main id="main">
+    <section class="section avis-public-section">
+        <div class="section-title">
+            <h1>Avis des clients</h1>
+            <p>Retrouvez les commentaires laissés par les utilisateurs connectés.</p>
+        </div>
+
+        <div id="listeAvisPublic" class="avis-grid">
+            <p>Chargement des avis...</p>
+        </div>
+    </section>
+</main>
+
+<script src="js/auth.js"></script>
+<script src="js/avis_public.js"></script>
+<script src="js/ui.js"></script></body>
+</html>

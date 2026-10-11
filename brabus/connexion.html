@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Connexion — BRABUS</title>
+    <link rel="stylesheet" href="css/style.css">
+<script src="js/config.js"></script></head>
+
+<body>
+    <a class="skip" href="#main">Aller au contenu</a><header class="navbar"><a href="index.html" class="logo">BRABUS<span>× VINCENT ANAVILLELA</span></a><button class="menu-toggle" aria-expanded="false" aria-controls="navigation">Menu +</button><nav id="navigation" aria-label="Navigation principale"><a href="index.html#vehicules">Collection</a><a href="index.html#boutiques">Showrooms</a><a href="avis.html">Avis</a><a href="index.html#contact">Contact ↗</a><a id="inscription" href="inscription.html">Créer un compte</a><a id="connexion" class="account-link" href="connexion.html">Mon espace</a><a id="lienAdmin" href="admin/dashboard.html" style="display:none">Administration</a><a id="logout" href="#" style="display:none">Déconnexion</a></nav></header>
+    <main id="main" class="auth-page">
+        <form id="formConnexion" class="auth-card">
+            <h1>Connexion</h1>
+                <label for="field-1">Email</label><input id="field-1" type="email" name="email" placeholder="Votre email" required>
+                <label for="field-2">Mot de passe</label><input id="field-2" type="password" name="password" placeholder="Votre mot de passe" required>
+                <button>Se connecter</button>
+                <p>Pas de compte ? <a href="inscription.html">Créer un compte</a></p>
+        </form>
+    </main>
+    <script src="js/auth.js"></script>
+<script src="js/ui.js"></script></body> 
+
+</html>

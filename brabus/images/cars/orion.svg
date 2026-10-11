@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="850" viewBox="0 0 1400 850">
+<defs>
+<linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#1c1917"/><stop offset="1" stop-color="#050505"/></linearGradient>
+<filter id="shadow"><feDropShadow dx="0" dy="16" stdDeviation="14" flood-opacity=".45"/></filter>
+</defs>
+<rect width="1400" height="850" fill="url(#g)"/>
+<circle cx="1170" cy="130" r="190" fill="#facc15" opacity=".10"/>
+<path d="M180 520 C300 380 1140 370 1390 510 L1330 650 L260 670 Z" fill="#262626" stroke="#facc15" stroke-width="10" filter="url(#shadow)"/>
+<path d="M350 410 L530 250 L980 250 L1210 410 Z" fill="#333" stroke="#facc15" stroke-width="8"/>
+<path d="M590 300 L910 300 L1060 410 L470 410 Z" fill="#070707" opacity=".85"/>
+<path d="M300 520 L450 475 M1050 475 L1230 520" stroke="#facc15" stroke-width="12" stroke-linecap="round"/>
+<circle cx="420" cy="660" r="95" fill="#050505" stroke="#555" stroke-width="18"/>
+<circle cx="420" cy="660" r="38" fill="#facc15"/>
+<circle cx="1120" cy="660" r="95" fill="#050505" stroke="#555" stroke-width="18"/>
+<circle cx="1120" cy="660" r="38" fill="#facc15"/>
+<rect x="610" y="535" width="260" height="20" rx="10" fill="#facc15"/>
+<text x="70" y="105" fill="white" font-family="Arial" font-size="54" font-weight="bold">BRABUS</text>
+<text x="70" y="165" fill="#facc15" font-family="Arial" font-size="42" font-weight="bold">Orion V12</text>
+<text x="70" y="215" fill="#d1d5db" font-family="Arial" font-size="28">SUV grand luxe</text>
+</svg>

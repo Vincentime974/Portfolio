@@ -1,0 +1,5 @@
+window.BRABUS_DEMO=true;
+window.demoVehicles=['Inferno','Falcon','Cullinan','Rocket','Phantom','E-Titan','Cyber X','Deep Black'].map((name,i)=>({id_vehicule:i+1,marque:'BRABUS',modele:name,type:['SUV','Sportive','SUV','Berline','Berline','SUV','SUV','Sportive'][i],description:'Modèle fictif présenté pour illustrer le catalogue de ce projet pédagogique.',image:'images/cars/'+['inferno','falcon','cullinan','rocket','phantom','etitan','cyberx','deepblack'][i]+'.png'}));
+window.brabusRequest=async function(file,options){const response=await fetch('../api/'+file,options);if(!response.ok)throw Error('Service indisponible');const result=await response.json();if(!result.success)throw Error(result.message||'Requête non aboutie');return result};
+window.brabusVehicles=async()=>window.BRABUS_DEMO?window.demoVehicles:(await window.brabusRequest('get_vehicules.php')).vehicules;
+window.safeImage=value=>{try{const u=new URL(value,location.href);return ['http:','https:','file:'].includes(u.protocol)?u.href:''}catch{return ''}};

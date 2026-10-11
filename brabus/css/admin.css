@@ -1,0 +1,341 @@
+
+/* Interface admin BRABUS */
+body {
+    background: #0d0d0d;
+    color: white;
+}
+
+.admin-navbar {
+    min-height: 75px;
+    padding: 0 45px;
+    background: #050505;
+    border-bottom: 1px solid #2D2D2D;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.admin-navbar .logo {
+    color: white;
+    font-size: 26px;
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+.admin-navbar nav {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.admin-navbar nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.admin-navbar nav a:hover {
+    color: #C9A15F;
+}
+
+.admin-main {
+    min-height: calc(100vh - 75px);
+    padding: 50px 70px;
+    background: radial-gradient(circle at top, #222, #0b0b0b);
+    color: white;
+}
+
+.admin-hero,
+.admin-page-title {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.admin-hero h1,
+.admin-page-title h1 {
+    font-size: 42px;
+    margin-bottom: 12px;
+}
+
+.admin-hero p,
+.admin-page-title p {
+    color: #bbb;
+}
+
+.admin-stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+    margin-bottom: 45px;
+}
+
+.admin-stats article,
+.admin-actions a,
+.admin-form,
+.admin-list-card {
+    background: #101010;
+    border: 1px solid #2D2D2D;
+    border-radius: 12px;
+}
+
+.admin-stats article {
+    text-align: center;
+    padding: 30px;
+}
+
+.admin-stats span {
+    font-size: 42px;
+    color: #C9A15F;
+    font-weight: bold;
+}
+
+.admin-stats p {
+    color: #ddd;
+    margin-top: 8px;
+}
+
+.admin-actions {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+}
+
+.admin-actions a {
+    padding: 28px;
+    text-decoration: none;
+    color: white;
+    transition: .3s;
+}
+
+.admin-actions a:hover {
+    transform: translateY(-6px);
+    border-color: #C9A15F;
+}
+
+.admin-actions h2 {
+    color: #C9A15F;
+    margin-bottom: 12px;
+}
+
+.admin-actions p {
+    color: #bbb;
+    line-height: 1.5;
+}
+
+.admin-form {
+    max-width: 1050px;
+    margin: auto;
+    padding: 32px;
+}
+
+.admin-form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 35px;
+}
+
+.admin-form label {
+    display: block;
+    margin-top: 14px;
+    margin-bottom: 7px;
+    color: #C9A15F;
+    font-weight: bold;
+}
+
+.image-placeholder {
+    height: 280px;
+    background: #ddd;
+    color: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 26px;
+    font-weight: bold;
+    margin: 15px 0;
+    border-radius: 8px;
+}
+
+.admin-fields {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.admin-form input,
+.admin-form textarea,
+.admin-search input {
+    padding: 13px;
+    border: 1px solid #444;
+    background: #050505;
+    color: white;
+    border-radius: 6px;
+}
+
+.admin-form textarea {
+    min-height: 110px;
+}
+
+.admin-form button,
+.admin-btn {
+    background: #C9A15F;
+    color: #111;
+    border: none;
+    padding: 13px 22px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.admin-search {
+    max-width: 1000px;
+    margin: 0 auto 30px;
+    display: flex;
+    gap: 15px;
+}
+
+.admin-search input {
+    flex: 1;
+}
+
+.admin-vehicle-grid {
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+}
+
+.admin-vehicle-card {
+    background: #050505;
+    border: 1px solid #2D2D2D;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.admin-vehicle-card img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+}
+
+.admin-vehicle-content {
+    padding: 18px;
+}
+
+.admin-vehicle-content h2 {
+    margin-bottom: 8px;
+}
+
+.admin-vehicle-content p {
+    color: #bbb;
+    font-size: 14px;
+}
+
+.admin-card-buttons {
+    display: flex;
+    gap: 12px;
+    margin-top: 15px;
+}
+
+.admin-card-buttons button,
+.admin-card-buttons a {
+    background: #C9A15F;
+    color: #111;
+    border: none;
+    padding: 10px 18px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.admin-list {
+    max-width: 950px;
+    margin: auto;
+    display: grid;
+    gap: 18px;
+}
+
+.admin-list-card {
+    padding: 22px;
+}
+
+.admin-list-card h2 {
+    color: #C9A15F;
+    margin-bottom: 8px;
+}
+
+.admin-list-card p {
+    color: #ddd;
+    line-height: 1.5;
+}
+
+.admin-list-card button {
+    margin-top: 15px;
+    background: #C9A15F;
+    color: #111;
+    border: none;
+    padding: 10px 18px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.admin-form.simple {
+    max-width: 650px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin-bottom: 35px;
+}
+
+@media (max-width: 950px) {
+    .admin-stats,
+    .admin-actions,
+    .admin-form-grid,
+    .admin-vehicle-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .admin-main {
+        padding: 35px 22px;
+    }
+
+    .admin-navbar {
+        flex-direction: column;
+        padding: 18px;
+        gap: 14px;
+    }
+
+    .admin-navbar nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+
+/* Corrections admin BDD */
+.admin-error {
+    color: #ff6b6b;
+    text-align: center;
+    margin: 20px 0;
+}
+.admin-list-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+.admin-list-actions button {
+    margin-top: 0;
+}
+#btnAnnulerBoutique {
+    background: transparent;
+    color: white;
+    border: 1px solid #C9A15F;
+}
+
+/* Harmonisation graphique */
+.admin-navbar{border-bottom-color:#3d2926}.admin-navbar .logo{font-family:Impact,sans-serif}.admin-navbar nav a:hover{color:#e53a30}.admin-main{background:#101010}button,.btn{border-radius:0!important}input,textarea,select{border-radius:0!important}@media(max-width:700px){.admin-navbar{padding:20px;flex-wrap:wrap;gap:20px}.admin-navbar nav{flex-wrap:wrap}.admin-main{padding:30px 20px}table{display:block;overflow-x:auto}}
