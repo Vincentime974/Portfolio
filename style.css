@@ -6,3 +6,6 @@
 
 /* Full name in the portfolio header and footer. */
 .brand{font-size:clamp(16px,2vw,26px);letter-spacing:-.7px;line-height:1.15}header>.brand{max-width:230px}@media(max-width:650px){header{gap:10px}header>.brand{max-width:145px;font-size:18px}footer>.brand{font-size:20px}}
+
+/* Internship and education timeline. */
+.internship{margin:30px 0;padding:25px;border:1px solid var(--green);border-radius:8px;background:var(--panel)}.internship h3{font-size:clamp(23px,3vw,34px);margin:14px 0}.internship p{color:var(--muted)}.timeline{list-style:none;padding:0 0 0 30px;margin:45px 0;border-left:1px solid var(--line);max-width:850px}.timeline li{position:relative;padding:0 0 38px 15px}.timeline li:last-child{padding-bottom:0}.timeline li:before{content:'';position:absolute;left:-37px;top:7px;width:12px;height:12px;border-radius:50%;background:var(--green)}.timeline-date{font-size:11px;letter-spacing:1px;color:var(--green)}.timeline h3{font-size:clamp(24px,3vw,32px);margin:10px 0}.timeline p{color:var(--muted);margin-bottom:8px}.journey-certifications{border-top:1px solid var(--line);padding-top:25px}.journey-certifications p{margin-top:15px}@media(min-width:651px){header nav{gap:clamp(12px,2vw,30px)}}
